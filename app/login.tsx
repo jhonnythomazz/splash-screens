@@ -11,13 +11,28 @@ export default function Login() {
       />
 
       <View style={styles.general}>
-      <Text>Login</Text>
+
+      <View> 
+      <Text style={{marginLeft: 10}}>Login</Text>
       <TextInput placeholder="Insira seu CPF" style={styles.input}/>
-      <Text>Senha</Text>
+      </View>
+    
+      <View> 
+      <Text style={{marginLeft: 10}}>Senha</Text>
       <TextInput placeholder="Insira sua senha" style={styles.input}/>
       </View>
-      <Text>Cadastrar</Text>
-      <Text>Esqueçeu a senha?</Text>
+     
+      </View>
+
+      <View style={styles.info}>
+      <Text style={{color: '#820f82'}}>Cadastrar</Text>
+      <Text style={{color: '#820f82'}}>Esqueçeu a senha?</Text>
+      </View>
+
+      <View style={styles.button}>
+        <Text style={{fontSize: 15, color: 'white'}}>Entrar</Text>
+      </View>
+      
       <StatusBar style="auto" />
     </View>
   );

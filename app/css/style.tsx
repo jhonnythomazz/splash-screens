@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
+    marginTop: 150,
   },
   input: {
     padding: 10,
@@ -15,14 +15,31 @@ const styles = StyleSheet.create({
     width: '90%',
   },
   general:{
-    width: '90%'
+    width: '90%',
+    marginTop: 50,
   },
   image: {
     width: '90%',
     height: 50,
     marginBottom: 10
   },
- 
+  info:{
+    display: 'flex',
+    alignItems: 'flex-end',
+    marginLeft: 200,
+    marginTop: 10,
+    color: '#820f82'
+  },
+  button:{
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 150,
+    backgroundColor: '#005CAA',
+    padding: 10,
+    borderRadius: 8,
+    width: 150
+  }
 });
 
 export default styles;
