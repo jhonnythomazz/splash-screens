@@ -22,18 +22,16 @@ export default function Login() {
       <View> 
         <FormField placeholder={'Insira sua senha'} label={'Senha'} secure={true}></FormField>
       </View>
+
+      <View> 
+        <FormField placeholder={'Insira seu username'} label={'Nome de usuário'} secure={false}></FormField>
+      </View>
      
       </View>
-
-      <View style={styles.info}>
-      <Text style={{color: '#820f82'}}>Cadastrar</Text>
-      <Text style={{color: '#820f82'}}>Esqueçeu a senha?</Text>
-      </View>
-
       <View>
         
          <Button>
-            Entrar
+            <a href={'/login'}>Cadastrar</a>
         </Button>
       </View>   
       

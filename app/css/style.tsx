@@ -34,11 +34,14 @@ const styles = StyleSheet.create({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 150,
     backgroundColor: '#005CAA',
+    marginTop: 80,
     padding: 10,
     borderRadius: 8,
     width: 150
+  },
+  btntext:{
+    color: 'white',
   }
 });
 
