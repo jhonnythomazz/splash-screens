@@ -1,11 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { Text, TextInput, View } from 'react-native';
+import { View } from 'react-native';
 import styles from './css/style';
 import { Image } from 'react-native';
 import FormField from './components/FormField';
 import Button from './components/Button'
+import Info from './components/Info';
+import Back from './components/Back';
+import Buttonlink from './components/Buttonlink';
 
-export default function Login() {
+export default function Cadastro() {
   return (
     <View style={styles.container}>
 
@@ -23,16 +26,18 @@ export default function Login() {
         <FormField placeholder={'Insira sua senha'} label={'Senha'} secure={true}></FormField>
       </View>
 
-      <View> 
-        <FormField placeholder={'Insira seu username'} label={'Nome de usuário'} secure={false}></FormField>
-      </View>
-     
-      </View>
       <View>
-        
-         <Button>
-            <a href={'/login'}>Cadastrar</a>
-        </Button>
+        <FormField placeholder={'Insira seu nome de usuário'} label={'Nome de usuário'} secure={false}></FormField>
+      </View>
+      
+      <View>
+        <Back></Back>
+      </View>
+
+      </View>
+
+      <View>
+      <Buttonlink text={'Criar conta'} href={'/login'}/>
       </View>   
       
       <StatusBar style="auto" />

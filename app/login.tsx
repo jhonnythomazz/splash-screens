@@ -3,7 +3,8 @@ import { Text, TextInput, View } from 'react-native';
 import styles from './css/style';
 import { Image } from 'react-native';
 import FormField from './components/FormField';
-import Button from './components/Button'
+import Buttonlink from './components/Buttonlink'
+import Info from './components/Info';
 
 export default function Login() {
   return (
@@ -25,19 +26,15 @@ export default function Login() {
      
       </View>
 
-      <View style={styles.info}>
-      <Text style={{color: '#820f82'}}>Cadastrar</Text>
-      <Text style={{color: '#820f82'}}>Esqueçeu a senha?</Text>
+      <View>
+        <Info></Info>
       </View>
 
       <View>
-        
-         <Button>
-            Entrar
-        </Button>
+        <Buttonlink text="Entrar" href="/home"/>
       </View>   
       
-      <StatusBar style="auto" />
+      <StatusBar style="auto"/>
     </View>
   );
 }
